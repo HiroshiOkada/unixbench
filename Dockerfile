@@ -8,9 +8,7 @@ RUN apt update &&\
     apt remove -y git &&\
     apt autoremove -y &&\
     apt clean &&\
-    rm -rf /var/lib/apt/lists/* &&\
-    cd /byte-unixbench/UnixBench  &&\
-    make
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /byte-unixbench/UnixBench
 
